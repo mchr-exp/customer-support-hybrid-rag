@@ -1,0 +1,16 @@
+# ===== Core stack =====
+langgraph>=0.3.5,<2          # LangGraph StateGraph (tested on 1.0.1)
+langchain>=0.3.14,<0.4
+langchain-openai>=0.3.1,<0.4
+langchain-core>=0.3.29
+SQLAlchemy>=2.0             # in-memory SQLite via StaticPool
+pydantic>=2.6              # structured extraction (identity + preferences)
+gradio>=4.44              # web UI (needs Python 3.12; 3.13 removed audioop)
+python-dotenv>=1.1.1
+pytest>=8.0
+
+# ===== Hybrid RAG + evaluation =====
+numpy>=1.26
+scikit-learn>=1.4          # TF-IDF + TruncatedSVD offline dense fallback
+rank-bm25>=0.2.2           # sparse BM25 retriever
+sentence-transformers>=3.0 # dense embeddings (all-MiniLM-L6-v2); optional at runtime

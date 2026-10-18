@@ -1,0 +1,19 @@
+# Keep the build context small and secrets out of the image.
+.venv
+.diagram-venv
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+
+# NEVER ship the real API key into an image layer.
+.env
+
+# Dev-only / not needed at runtime.
+.git
+.gitignore
+*.log
+build/
+reference/
+eval/
+tests/

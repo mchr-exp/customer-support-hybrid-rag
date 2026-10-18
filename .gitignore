@@ -1,0 +1,24 @@
+# secrets
+.env
+
+# chinook data (downloaded / built automatically on first run)
+data/*.sql
+data/*.sqlite
+data/*.db
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# retrieval indexes / model cache
+indexes/
+
+# course scaffolding — not part of the product
+reference/
+LEARNING_ROADMAP.md
+src/PLACEHOLDER.md
+
+# os
+.DS_Store
